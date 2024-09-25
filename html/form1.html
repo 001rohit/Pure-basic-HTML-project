@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+        }
+
+        .wrapper {
+            /* text-align: center; */
+            background: gray;
+            padding: 35px;
+        }
+
+        input {
+            font-size: 20px;
+        }
+        .row{
+            display: flex;
+        }
+        label{
+            cursor: pointer;
+        }
+        .first{
+            margin: 5px;
+        }
+        .title{
+            text-align: center;
+        }
+        .btn1{
+            text-align: center;
+            margin: 10px 0;
+        }
+        #btn{
+            padding: 7px;
+        }
+       @media screen and ( max-width: 650px) {
+           body{
+            background: #690909;
+           }
+           .row{
+            display: block;
+           }
+       }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div for="name">
+            <h3>Full Name*</h3>
+        </div>
+
+        <div class="row">
+
+            <div class="first">
+                <input type="text" id="fname" required><br>
+                <label for="fname">
+                    <p>First</p>
+                </label>
+            </div>
+    
+            <div class="first">
+                <input type="text" id="lname" required><br>
+                <label for="lname">
+                    <p>Last</p>
+                </label>
+            </div>
+
+        </div>
+        <br>
+         <div class="mail">
+            <label for="email" name="">
+                Email*
+            </label><br>
+            <input type="text" id="email" required>
+         </div>
+        <br>
+
+        <label for="txt">Leave us a few words*</label><br>
+        <textarea name="" id="txt" required></textarea><br>
+        <div class="btn1">
+            <input type="submit" id="btn">
+        </div>
+    </div>
+</body>
+
+</html>
